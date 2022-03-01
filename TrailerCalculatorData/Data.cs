@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TrailerCalculatorCore.Models;
 
@@ -7,7 +6,7 @@ namespace TrailerCalculatorData
 {
     public static class Data
     {
-        public static Licence GetValidDriverLicence(string driverLicenceClassName, int carWeight, int trailerWeight)
+        public static Licence GetValidDriverLicence(string driverLicenceClassName, int vehicleWeight, int trailerWeight)
         {
             List<Licence> licences = FeedLicences();
 
@@ -15,12 +14,12 @@ namespace TrailerCalculatorData
                 licence.SertificateClassName.Equals(driverLicenceClassName)
                 &&
                 (
-                    ((carWeight + trailerWeight) <= licence.MaxTotalWeight
-                    && carWeight <= licence.CarMaxTotalWeight
+                    ((vehicleWeight + trailerWeight) <= licence.MaxTotalWeight
+                    && vehicleWeight <= licence.CarMaxTotalWeight
                     && trailerWeight <= licence.TrailerMaxWeight)
-                    ||                                                                                                  // remove
-                    ((carWeight + trailerWeight) <= licence.AlternativMaxTotalWeight                                    // remove
-                    && carWeight <= licence.CarMaxTotalWeight)                                                          // remove
+                    ||                                                                                                      // remove
+                    ((vehicleWeight + trailerWeight) <= licence.AlternativMaxTotalWeight                                    // remove
+                    && vehicleWeight <= licence.CarMaxTotalWeight)                                                          // remove
                 )
                 );
 

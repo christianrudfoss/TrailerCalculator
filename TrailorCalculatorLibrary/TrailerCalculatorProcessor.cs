@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using TrailerCalculatorCore.Models;
+﻿using TrailerCalculatorCore.Models;
 using TrailerCalculatorData;
 
 namespace TrailerCalculatorLibrary
