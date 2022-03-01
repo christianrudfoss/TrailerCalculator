@@ -12,9 +12,9 @@ namespace TrailerCalculatorLibrary
             {
                 SertificateClassName = "B",
                 CarMaxTotalWeight = 3500,
-                TrailerMaxWeight = 750,
-                MaxTotalWeight = 4250,                      //*
-                AlternativMaxTotalWeight = 3500
+                TrailerMaxWeight = 750,                                                             // int.MaxValue
+                MaxTotalWeight = 4250,                                                              // 3500
+                AlternativMaxTotalWeight = 3500                                                     // remove
             };
 
             Licence licence2 = new()
@@ -57,9 +57,9 @@ namespace TrailerCalculatorLibrary
                         ((carWeight + trailerWeight) <= licence.MaxTotalWeight 
                         && carWeight <= licence.CarMaxTotalWeight 
                         && trailerWeight <= licence.TrailerMaxWeight)
-                        ||
-                        ((carWeight + trailerWeight) <= licence.AlternativMaxTotalWeight 
-                        && carWeight <= licence.CarMaxTotalWeight)
+                        ||                                                                          // remove
+                        ((carWeight + trailerWeight) <= licence.AlternativMaxTotalWeight            // remove
+                        && carWeight <= licence.CarMaxTotalWeight)                                  // remove
                     )
                     );
 

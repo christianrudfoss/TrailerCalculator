@@ -26,14 +26,14 @@ namespace TrailerCalculatorTest
 
         [Theory]
         [InlineData("B", 3600, 0)]
-        [InlineData("B", 3000, 800)]    //*
+        [InlineData("B", 3000, 800)]                                                                // move to method under
         [InlineData("BE", 3510, 1000)]
         [InlineData("BE", 3500, 4000)]
         [InlineData("C1E", 3510, 1000)]
         [InlineData("C1E", 3510, 4500)]
         [InlineData("B96", 3510, 500)]
         [InlineData("B96", 3500, 751)]
-        public void DriverLicence_NOT_OK_IsLegalShouldBeFalse(string driverLicenceClassName, int carTotalWeight, int trailerTotalWeight)
+        public void ValidDriverLicenceShouldBeFalse(string driverLicenceClassName, int carTotalWeight, int trailerTotalWeight)
         {
             Assert.False(TrailerCalculatorProcessor.ValidDriverLicence(driverLicenceClassName, carTotalWeight, trailerTotalWeight));
         }
@@ -41,16 +41,16 @@ namespace TrailerCalculatorTest
         [Theory]
         [InlineData("B", 3130, 150)]
         [InlineData("B", 2500, 1000)]
-        [InlineData("B", 3000, 600)]    //*
-        [InlineData("B", 3400, 200)]    //*
-        [InlineData("B", 3500, 750)]    //*
+        [InlineData("B", 3000, 600)]                                                                // move to method over
+        [InlineData("B", 3400, 200)]                                                                // move to method over
+        [InlineData("B", 3500, 750)]                                                                // move to method over
         [InlineData("BE", 2500, 1000)]
         [InlineData("BE", 3500, 3500)]
         [InlineData("C1E", 3500, 1000)]
         [InlineData("C1E", 3500, 4500)]
         [InlineData("B96", 3500, 750)]
         [InlineData("B96", 2500, 1750)]
-        public void DriverLicence_OK_IsLegalShouldBeTrue(string driverLicenceClassName, int carTotalWeight, int trailerTotalWeight)
+        public void ValidDriverLicenceShouldBeTrue(string driverLicenceClassName, int carTotalWeight, int trailerTotalWeight)
         {
             Assert.True(TrailerCalculatorProcessor.ValidDriverLicence(driverLicenceClassName, carTotalWeight, trailerTotalWeight));
         }
