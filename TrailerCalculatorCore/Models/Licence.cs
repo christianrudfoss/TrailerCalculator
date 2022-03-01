@@ -1,4 +1,4 @@
-﻿namespace TrailorCalculatorLibrary.Models
+﻿namespace TrailerCalculatorCore.Models
 {
     public class Licence
     {

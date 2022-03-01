@@ -1,5 +1,5 @@
 ﻿using System;
-using TrailorCalculatorLibrary.Models;
+using TrailerCalculatorCore.Models;
 using TrailerCalculatorLibrary;
 namespace TrailorCalculator
 {
@@ -7,7 +7,7 @@ namespace TrailorCalculator
     {
         static void Main(string[] args)
         {
-            Vehicle carEV66684 = new() { VehicleNumber = "EV66684", TotalWeight = 3130 };
+            Vehicle carEV66684 = new() { VehicleNumber = "EV66684", TotalWeight = 3130, MaxTrailerWeight = 9000, MaxTotalWeight = 12500 };
             Trailer trailerKY6490 = new() { TrailerNumber = "KY6490", DeadWeight = 1076 };
             Trailer trailerAZ8056 = new() { TrailerNumber = "AZ8056", DeadWeight = 155 };
 

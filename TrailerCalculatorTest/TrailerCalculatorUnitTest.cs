@@ -1,5 +1,6 @@
 using Xunit;
 using TrailerCalculatorLibrary;
+using TrailerCalculatorCore.Models;
 
 namespace TrailerCalculatorTest
 {
@@ -56,6 +57,33 @@ namespace TrailerCalculatorTest
         }
 
         
-
+        
+        
+        
+        
+        
+        
+        
+        [Fact]
+        public void TrailerWeightIsValidForVehicle_False()
+        {
+            Vehicle vehicle = new() { MaxTotalWeight = 3500, MaxTrailerWeight = 500, TotalWeight = 2000 };
+            int trailerWeight = 600;
+            Assert.False(TrailerCalculatorProcessor.TrailerWeightIsValidForVehicle(vehicle, trailerWeight));
+        }
+        [Fact]
+        public void TrailerWeightIsValidForVehicle_False2()
+        {
+            Vehicle vehicle = new() { MaxTotalWeight = 4500, MaxTrailerWeight = 1500, TotalWeight = 3500 };
+            int trailerWeight = 1100;
+            Assert.False(TrailerCalculatorProcessor.TrailerWeightIsValidForVehicle(vehicle, trailerWeight));
+        }
+        [Fact]
+        public void TrailerWeightIsValidForVehicle_True()
+        {
+            Vehicle vehicle = new() { MaxTotalWeight = 4500, MaxTrailerWeight = 1500, TotalWeight = 3500 };
+            int trailerWeight = 900;
+            Assert.True(TrailerCalculatorProcessor.TrailerWeightIsValidForVehicle(vehicle, trailerWeight));
+        }
     }
 }

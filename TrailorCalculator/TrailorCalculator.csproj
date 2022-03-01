@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TrailerCalculatorCore\TrailerCalculatorCore.csproj" />
     <ProjectReference Include="..\TrailorCalculatorLibrary\TrailorCalculatorLibrary.csproj" />
   </ItemGroup>
 

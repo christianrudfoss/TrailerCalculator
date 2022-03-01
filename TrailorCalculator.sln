@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrailorCalculatorLibrary", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrailerCalculatorTest", "TrailerCalculatorTest\TrailerCalculatorTest.csproj", "{A7963701-ADD9-452E-A221-9D7BA516B3C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrailerCalculatorData", "TrailerCalculatorData\TrailerCalculatorData.csproj", "{86FA3D82-511B-473C-95DA-9779BC1747D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrailerCalculatorCore", "TrailerCalculatorCore\TrailerCalculatorCore.csproj", "{8FDACFB0-F80B-4E47-B4A2-56A724B762CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A7963701-ADD9-452E-A221-9D7BA516B3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7963701-ADD9-452E-A221-9D7BA516B3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7963701-ADD9-452E-A221-9D7BA516B3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86FA3D82-511B-473C-95DA-9779BC1747D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86FA3D82-511B-473C-95DA-9779BC1747D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86FA3D82-511B-473C-95DA-9779BC1747D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86FA3D82-511B-473C-95DA-9779BC1747D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FDACFB0-F80B-4E47-B4A2-56A724B762CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDACFB0-F80B-4E47-B4A2-56A724B762CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDACFB0-F80B-4E47-B4A2-56A724B762CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDACFB0-F80B-4E47-B4A2-56A724B762CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
