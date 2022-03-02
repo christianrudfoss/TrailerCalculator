@@ -1,8 +1,6 @@
 ﻿namespace TrailerCalculatorCore.Models
 {
-    public class Trailer
+    public class Trailer:Base
     {
-        public string TrailerNumber { get; set; }
-        public int DeadWeight { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace TrailerCalculatorLibrary
                     return true;
             }
             else
-                return true;
+                return false;
         }
 
 
